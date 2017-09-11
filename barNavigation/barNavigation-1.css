@@ -2,6 +2,7 @@
 
 body {
   background: #F0F8EA;
+  margin: 0;
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -44,6 +45,7 @@ header::after {
   background: #464655;
   clip-path: circle(0px at top right);
   transition: clip-path ease-in-out 700ms;
+  width: 100%;
 }
 
 /* ANIMACION CHETA */
@@ -61,18 +63,22 @@ header::after {
   border-bottom: 1px solid #575766;
 }
 
+.barra-nav li:last-child {
+  border-bottom: none;
+}
+
 .barra-nav li i {
   padding-right: 5px;
 }
 
-.barra-nav li:last-child {
-  border-bottom: none;
+.barra-nav li a i:hover {
+	color: #464655
 }
 
 .barra-nav a {
   color: #EBEBD3;
   display: block;
-  padding: 2em 4em 2em 1.5em;
+  padding: 1em 4em 1em 1.5em;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -87,6 +93,14 @@ header::after {
   display: inline-block;
   font-size: 1.5em;
   margin-right: 1em;
+  width: 1.1em;
+  text-align: right;
+  color: rgba(255,255,255,.4);
+}
+
+.barra-nav--icon--redes {
+  display: inline-block;
+  font-size: 1.5em;
   width: 1.1em;
   text-align: right;
   color: rgba(255,255,255,.4);
@@ -120,7 +134,11 @@ header::after {
   transform: translateY(3px);
 }
 
-/*.open .hamburger {
+/*
+
+ANIMACION HAMBURGER
+
+.open .hamburger {
   transform: rotate(45deg);
 }
 
@@ -153,7 +171,7 @@ header::after {
   
   .barra-nav a {
     padding: 0;
-    margin-left: 3em;
+    margin-left: 1em;
   }
   
   .barra-nav a:hover,
