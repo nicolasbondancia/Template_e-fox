@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+body {
+  background: #F0F8EA;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.container {
+  width: 95%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  background: #E54B4B;
+  color: #EBEBD3;
+  padding: 1em 0;
+  position: relative;
+}
+
+/* VISIBLE TODO EL HEADER */
+header::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.logo {
+  float: left;
+  font-size: 1rem;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.logo span {
+  font-weight: 400;
+}
+
+.barra-nav {
+  position: absolute;
+  top: 100%;
+  right: 0%;
+  background: #464655;
+  clip-path: circle(0px at top right);
+  transition: clip-path ease-in-out 700ms;
+}
+
+/* ANIMACION CHETA */
+.barra-nav--open {
+  clip-path: circle(250% at top right);
+}
+
+.barra-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.barra-nav li {
+  border-bottom: 1px solid #575766;
+}
+
+.barra-nav li i {
+  padding-right: 5px;
+}
+
+.barra-nav li:last-child {
+  border-bottom: none;
+}
+
+.barra-nav a {
+  color: #EBEBD3;
+  display: block;
+  padding: 2em 4em 2em 1.5em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.barra-nav a:hover,
+.barra-nav a:focus {
+  background: #E4B363;
+  color: #464655;
+}
+
+.barra-nav--icon {
+  display: inline-block;
+  font-size: 1.5em;
+  margin-right: 1em;
+  width: 1.1em;
+  text-align: right;
+  color: rgba(255,255,255,.4);
+}
+
+.menu-boton {
+  padding: 1em;
+  position: absolute;
+  top: .5em;
+  right: .5em;
+  cursor: pointer;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  display: block;
+  background: #EBEBD3;
+  height: 3px;
+  width: 1.75em;
+  border-radius: 3px;
+  transition: all ease-in-out 500ms;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+}
+
+/*.open .hamburger {
+  transform: rotate(45deg);
+}
+
+.open .hamburger::before {
+  opacity: 0;
+}
+
+.open .hamburger::after {
+  transform: translateY(-3px) rotate(-90deg);
+}*/
+
+@media (min-width: 900px) {
+  
+  .menu-boton {
+    display: none;
+  }
+  
+  .barra-nav {
+    height: auto;
+    position: relative;
+    background: transparent;
+    float: right;
+    clip-path: initial;
+  }
+  
+  .barra-nav li {
+    display: inline-block;
+    border: none;
+  }
+  
+  .barra-nav a {
+    padding: 0;
+    margin-left: 3em;
+  }
+  
+  .barra-nav a:hover,
+  .barra-nav a:focus {
+    background: transparent;
+  }
+  
+  .barra-nav--icon {
+    display: none;
+  }
+  
+}
