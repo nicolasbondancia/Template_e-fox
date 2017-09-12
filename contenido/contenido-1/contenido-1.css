@@ -1,0 +1,90 @@
+/*CSS GRID*/
+.wrapper{
+	width: 1170px;
+	text-align: center;
+	margin: 0 auto;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+#contenido-1{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas:
+	"imagen side";
+	justify-items: center;
+	align-items: center;
+}
+
+#contenido-1 .side{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+	"icono"
+	"titulo"
+	"texto"
+	"link";
+    grid-gap: 1em 0em;  
+    justify-items: center;
+    align-content:center;
+}
+#contenido-1 .imagen{
+	grid-area: imagen;
+	align-content:center;
+}
+
+#contenido-1 .side .icono{
+	grid-area: icono;
+}
+
+#contenido-1 .side .titulo{
+	grid-area: titulo;
+}
+
+#contenido-1 .side .texto{
+	grid-area: texto;
+}
+
+#contenido-1 .side .link{
+	grid-area: link;
+}
+
+/* CSS particular */
+#contenido-1 .side .link .boton {
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #3498db;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+#contenido-1 .side .link .boton:hover {
+  background: #3cb0fd;
+  text-decoration: none;
+}
+
+
+/* Media Query */
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+	#contenido-1{
+		grid-template-columns: 1fr;
+		grid-template-areas:
+		"imagen"
+		"side";
+	}
+}
+
+@media (max-width: 540px) {
+
+}
