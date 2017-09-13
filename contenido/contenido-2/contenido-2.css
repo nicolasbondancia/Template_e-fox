@@ -1,38 +1,38 @@
 /*CSS GRID*/
 
-.contenido-1{
+.contenido-2{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-areas:
-	"imagen icono"
-	"imagen titulo"
-	"imagen texto"
-	"imagen link";
+	"icono imagen"
+	"titulo imagen"
+	"texto imagen"
+	"link imagen";
 	justify-items: center;
 	align-items: center;
 	grid-gap: 0em 1.5em; 
 	padding: 15px 30px 15px 30px;
 }
 
-.contenido-1 .imagen{
+.contenido-2 .imagen{
 	grid-area: imagen;
 	align-content:center;
 }
 
-.contenido-1 .icono{
+.contenido-2 .icono{
 	grid-area: icono;
 }
 
-.contenido-1 .titulo{
+.contenido-2 .titulo{
 	grid-area: titulo;
 
 }
 
-.contenido-1 .texto{
+.contenido-2 .texto{
 	grid-area: texto;
 }
 
-.contenido-1 .link{
+.contenido-2 .link{
 	grid-area: link;
 }
 
@@ -45,25 +45,25 @@
 
 /*Entre 992px y 768px*/
 @media (max-width: 992px) {
-	.contenido-1{
+	.contenido-2{
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		grid-template-areas:
 		"icono titulo titulo titulo"
 		"imagen imagen texto texto"
 		"link link link link";
 		}
-	.contenido-1 .icono{
+	.contenido-2 .icono{
 		justify-self:start;
 	}
 
-	.contenido-1 .titulo{
+	.contenido-2 .titulo{
 		justify-self:start;
 	}
 }
 
 /*Entre 768px y 576px*/
 @media (max-width: 768px) {
-	.contenido-1{
+	.contenido-2{
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		grid-template-areas:
 		"icono titulo titulo titulo"
@@ -73,10 +73,10 @@
 		justify-items: stretch;
 		grid-gap: 1em 1.5em; 
 	}
-	.contenido-1 .imagen{
+	.contenido-2 .imagen{
 		align-content:stretch;
 	}
-	.contenido-1 .imagen img{
+	.contenido-2 .imagen img{
 		width:100%;
 	}
 
