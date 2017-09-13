@@ -8,6 +8,27 @@ html{
 	color: #333;
 }
 
+body {
+  background: #F0F8EA;
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+}
+
+header {
+  background: #E54B4B;
+  color: #EBEBD3;
+  padding: 1em 0;
+  position: relative;
+}
+
+/* VISIBLE TODO EL HEADER COMO OVERFLOW HIDDEN */
+header::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
 h1{ 
     font-size: 2.6rem;
 } 
