@@ -1,29 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
-
-body {
-  background: #F0F8EA;
-  margin: 0;
-  font-family: 'Quicksand', sans-serif;
-}
-
 .container {
   width: 95%;
-  max-width: 1000px;
   margin: 0 auto;
-}
-
-header {
-  background: #E54B4B;
-  color: #EBEBD3;
-  padding: 1em 0;
-  position: relative;
-}
-
-/* VISIBLE TODO EL HEADER */
-header::after {
-  content: '';
-  clear: both;
-  display: block;
 }
 
 .logo {
@@ -92,7 +69,7 @@ header::after {
 .barra-nav--icon {
   display: inline-block;
   font-size: 1.5em;
-  margin-right: 1em;
+  margin-right: 0.5em;
   width: 1.1em;
   text-align: right;
   color: rgba(255,255,255,.4);
@@ -126,54 +103,37 @@ header::after {
   transform: translateY(3px);
 }
 
-/*
-
-ANIMACION HAMBURGER
-
-.open .hamburger {
-  transform: rotate(45deg);
-}
-
-.open .hamburger::before {
-  opacity: 0;
-}
-
-.open .hamburger::after {
-  transform: translateY(-3px) rotate(-90deg);
-}*/
-
 @media (min-width: 900px) {
   
-  .menu-boton {
+.menu-boton {
     display: none;
-  }
+}
   
-  .barra-nav {
+.barra-nav {
     height: auto;
     position: relative;
     background: transparent;
     float: right;
     clip-path: initial;
-	width: initial;
-  }
+    width: initial;
+}
   
-  .barra-nav li {
+.barra-nav li {
     display: inline-block;
     border: none;
-  }
+}
   
-  .barra-nav a {
+.barra-nav a {
     padding: 0;
     margin-left: 1em;
-  }
+}
   
-  .barra-nav a:hover,
-  .barra-nav a:focus {
+.barra-nav a:hover,
+.barra-nav a:focus {
     background: transparent;
-  }
+}
   
-  .barra-nav--icon {
+.barra-nav--icon {
     display: none;
-  }
-  
+}
 }

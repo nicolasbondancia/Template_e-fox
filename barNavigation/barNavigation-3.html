@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>NAV BAR 03</title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="barNavigation-3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+<header>
+	<div class="container">
+		<h1 class="logo">Generico<span>Logo</span></h1>
+		<div class="menu-boton" onclick="openNav()">
+			<div class="hamburger" ></div>
+		</div>
+		<div class="container-nav overlay">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<nav class="barra-nav overlay-contenido">
+				<ul>
+					<li><a href=""><i class="fa fa-home barra-nav--icon"></i>Home</a></li>
+					<li><a href=""><i class="fa fa-info barra-nav--icon"></i>About</a></li>
+					<li><a href=""><i class="fa fa-pencil barra-nav--icon"></i>Blog</a></li>
+					<li><a href=""><i class="fa fa-usd barra-nav--icon"></i>Pricing</a></li>
+					<li><a href=""><i class="fa fa-envelope barra-nav--icon"></i>Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="barNavigation-3.js">
+</script>
+</body>
+</html>
