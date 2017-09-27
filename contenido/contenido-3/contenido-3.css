@@ -1,0 +1,65 @@
+/*CSS GRID*/
+
+.contenido-3{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+	"icono"
+	"titulo"
+	"imagen"
+	"texto"
+	"link";
+	justify-items: center;
+	align-items: center;
+	grid-gap: 0em 1.5em; 
+	padding: 15px 30px 15px 30px;
+}
+
+.contenido-3 .imagen{
+	grid-area: imagen;
+	width: 100%;
+
+}
+
+.contenido-3 .imagen img{
+width: 100%;
+}
+
+.contenido-3 .icono{
+	grid-area: icono;
+}
+
+.contenido-3 .titulo{
+	grid-area: titulo;
+
+}
+
+.contenido-3 .texto{
+	grid-area: texto;
+}
+
+.contenido-3 .link{
+	grid-area: link;
+}
+
+/* Media Query */
+
+/*Entre 1200px y 992px*/
+@media (max-width: 1200px) {
+
+}
+
+/*Entre 992px y 768px*/
+@media (max-width: 992px) {
+
+}
+
+/*Entre 768px y 576px*/
+@media (max-width: 768px) {
+
+}
+
+/*Menos576px*/
+@media (max-width: 576px) {
+
+}

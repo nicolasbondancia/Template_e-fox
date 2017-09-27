@@ -1,0 +1,5 @@
+rojo: #E54B4B
+azul: #464655
+naranja: #E4B363
+blanco: #ffffff
+negro: #000000
